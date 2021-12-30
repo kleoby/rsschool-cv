@@ -1,1 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Ekaterina Bulakhova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/48926cbe0e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="default.min.css">
+    <script src="highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="bg">
+        <div class="bgright"></div>
+        <div class="bgleft"></div>
+        <div id="outer">
+            <header>
+                <div class="containertop">
+                    <div class="leftcol">
+                        <div class="c-preview"> <img src="112.jpg" alt="My own picture" id="me">
+                        </div>
+                    </div>
+                    <div class="rightcol">
+                        <h1>Ekaterina Bulakhova</h1>
+                        <p><b>Date of birth:</b> 27.02.1983</p>
+                        <p><b>Citizenship:</b> Belarus </p>
+                        <p><b>Residence:</b> Belarus, Minsk </p>
+                        <h5>Contact details</h5>
+                        <ul class="nolist">
+                            <li> <i class="fas fa-envelope-open-text"></i> <a title="mail me" href="mailto:katenalifee@gmail.com">katenalifee@gmail.com</a></li>
+                            <li> <i class="fas fa-phone-square"></i> <a title="call me" href="tel:+375292535470">+375 29 2535470</a> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="navbar">
+
+
+                    <ul class="menuItems nav-menu">
+                        <li><a href="#outer" data-item="About">About</a></li>
+                        <li><a href="#skills" data-item="Skills">Skills </a></li>
+                        <li><a href="#coding" data-item="Code Examples">Code Examples</a></li>
+                        <li><a href="#projects" data-item="Projects">Projects</a></li>
+                        <li><a href="#work" data-item="Work Experience">Work Experience </a></li>
+                        <li><a href="#education" data-item='Education'>Education</a></li>
+
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </header>
+
+            <main>
+                <section id="skills">
+                    <div class="container">
+                        <h2> <i class="fas fa-list-alt"></i> Skills </h2>
+                        <p><b> Web design: </b> Adobe Photoshop, Corel draw, 3DMax, Macromedia Flash, Adobe Dreamweaver, Visual studio Code.</p>
+                        <p><b>Web development:</b> HTML, CSS, js, jquery, bootstrap</p>
+                        <p><b>Search engine optimization and link building</b></p>
+                        <p> <b> Other skills: </b></p>
+                        <p>Basic knowledge: XML, PHP, MySQL, Action script. Working experience with Unix platform through shell interface (such as transferring web projects to new hosting) </p>
+                        <p><b>Working experience with CMS: </b>MODx evo, MODx Revo, Pimcore, DIAFAN, Wordpress.</p>
+                        <p><b> Knowledge in the related occupations</b></p>
+                        <ul>
+                            <li> SEO concepts (goals and implementation)</li>
+                            <li>Page-proof </li>
+                            <li>Experience of managing projects (communication with customers, evaluation of task</li>
+                            <li>Usability, ux, ui, marketing</li>
+                            <li>Google Adwords</li>
+                            <li>Google Analytics and webmaster tools</li>
+                        </ul>
+                        <p> <b> English languages skills:</b> </p>
+                        <ul>
+                            <li><b>Reading</b> Upper-intermediate</li>
+                            <li><b>Writing</b> Upper-intermediate </li>
+                            <li><b>Speaking</b> Intermediate</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="coding">
+                    <div class="container">
+                        <h2> <i class="fas fa-list"></i> Code Examples </h2>
+                        <div class="snippet">
+                            <div class="snippetin">
+                                <h4> Credit Card Mask</h4>
+                                <pre><code class=" language-javascript">
+// return masked string
+function maskify(cc) {
+   cc = cc.split('');
+   for (var i = 0; i < cc.length - 4; i++) {
+       cc[i] = '#';
+   }
+   cc = cc.join('');
+   return cc
+}
+</code></pre>
+                            </div>
+                            <div class="snippetin">
+                                <h4> Arithmetic function</h4>
+                                <pre><code class=" language-javascript">
+function arithmetic(a, b, operator) {
+    switch (operator) {
+        case 'add':
+            return a + b;
+        case 'subtract':
+            return a - b;
+        case 'multiply':
+            return a * b;
+        case 'divide':
+            return a / b;
+    }
+}
+</code></pre>
+                            </div>
+                            <div class="snippetin">
+                                <h4>Decimal to binary converter</h4>
+                                <pre><code class=" language-javascript">
+   function decToBin(dec) {
+      if (dec == 0) return '0';
+      let bin = [];
+  
+      while (dec >= 1) {
+            let temp = dec % 2;
+            bin.push(temp);
+            dec = Math.floor(dec / 2);
+      }
+            return bin.reverse().join("");
+  }
+ 
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <div class="container">
+                        <h2> <i class="fas fa-address-card"></i> Projects </h2>
+                        <div class="snippet ">
+                            <div class="snippetin">
+                                <h4><a target="_blank" href="https://www.lady-nail.com/">lady-nail-com</a></h4>
+                                <a target="_blank" href="https://www.lady-nail.com/">
+                                    <img src="lady.jpg" alt="lady" />
+                                </a>
+                            </div>
+
+                            <div class="snippetin">
+                                <h4><a target="_blank" href="https://waterpolominsk.by/">waterpolominsk.by</a></h4>
+                                <a target="_blank" href="https://waterpolominsk.by/">
+                                    <img src="water.jpg" alt="water" />
+                                </a>
+                            </div>
+
+                            <div class="snippetin">
+                                <h4><a target="_blank" href="https://www.demir.by/">demir.by</a></h4>
+                                <a target="_blank" href="https://www.demir.by/">
+                                    <img src="demir.jpg" alt="demir" />
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+                <section id="work">
+                    <div class="container">
+                        <h2> <i class="fas fa-clipboard-list"></i> Work Experience </h2>
+                        <p>Minsk Pedagogical Gymnasium. Dates of employment: from 06/01/2005 – 01/06/2006. Job title: Teacher of English </p>
+                        <p> Ciclum. Dates of employment: from 05/10/2011- – 05/09/2012. Job title: Web master </p>
+                        <p> Sole entrepreneur. Dates of employment: from 05/01/2008- to Present. Job title: Web master </p>
+                    </div>
+                </section>
+                <section id="education">
+                    <div class="container">
+                        <h2><i class="fas fa-user-graduate"></i> Education </h2>
+                        <p><b>Dates of studying: </b>from 10/01/2006- 05/01/2008<br />
+                            <b>Name of institution: </b>Belarusian Nation Technical University <br />
+                            <b>Degree and major: </b>Department: Web design and computer graphic; Specialty: Web designer, programmer<br />
+                            <b>Dates of studying: </b>from 10/01/2002 - 06/01/2005<br />
+                            <b>Name of institution: </b>Belarusian State Pedagogical University <br />
+                            <b>Degree and major: </b>Department: Bachelor “Practical psychology”;  Specialty: Practical psychologist<br />
+                            <b> Dates  of studying: </b>from 10/01/2000 - 06/01/2005<br />
+                            <b>Name of institution: </b>Belarusian State Pedagogical University <br />
+                            <b>Degree and major: </b>Department: “Social pedagogical technology”;  Specialty: Practical psychologist. Teacher of English</p>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; <a title="github link" href="https://github.com/Ekaterinaby" target="_blank"> https://github.com/Ekaterinaby</a>, 2021</p>
+                <object type="image/svg+xml" data="https://rs.school/images/rs_school_js.svg">
+        <img alt="rs_school"
+                  src="https://rs.school/images/rs_school_js.svg">
+      </object>
+                <p> <a title="rs_school link" href="https://rs.school/js/" target="_blank"> https://rs.school/js/</a></p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+
+</html>
 
